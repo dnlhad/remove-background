@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    background-image: url('image.webp'); /* Menggunakan gambar image.webp sebagai latar belakang */
+    background-size: cover; /* Mengatur gambar agar menutupi seluruh latar belakang */
+    background-position: center; /* Memusatkan gambar */
+    color: #fff; /* Ubah warna teks menjadi putih untuk kontras yang lebih baik */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Mengatur elemen ke atas */
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Latar belakang putih dengan transparansi */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 30px; /* Menambah padding untuk ruang yang lebih baik */
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px; /* Memberikan jarak dari atas */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px; /* Ukuran font lebih besar untuk judul */
+    color: black; /* Mengubah warna teks menjadi hitam */
+    text-shadow: 
+        1px 1px 0 rgba(255, 255, 255, 0.7), /* Bayangan putih */
+        2px 2px 0 rgba(255, 255, 255, 0.5), /* Bayangan putih lebih terang */
+        3px 3px 0 rgba(0, 0, 0, 0.5); /* Bayangan hitam untuk efek 3D */
+}
+
+.upload-area {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: none; /* Sembunyikan input file */
+}
+
+.upload-label {
+    background-color: #ff4757; /* Warna merah cerah */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Tambahkan margin untuk jarak antara label dan tombol */
+}
+
+.upload-label:hover {
+    background-color: #e84118; /* Warna merah lebih gelap saat hover */
+}
+
+button {
+    background-color: #3742fa; /* Warna biru gelap */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e90ff; /* Warna biru lebih cerah saat hover */
+}
+
+.result-area {
+    margin-top: 20px;
+}
+
+.result-area img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
